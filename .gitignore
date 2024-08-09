@@ -1,0 +1,14 @@
+.vscode/
+
+vendor/
+
+logs/
+
+public/uploads/*
+uploads/*
+tmp/*
+
+
+test.html
+
+flutterwave-php-2024-05-23.log

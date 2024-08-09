@@ -1,0 +1,79 @@
+
+
+[2024-07-28 16:20:12] [From Initializepayment] Array
+(
+    [status] => success
+    [data] => Array
+        (
+            [txn_id] => 66a661ac8d072641880a8db4
+            [invoice_url] => https://plisio.net/invoice/66a661ac8d072641880a8db4
+            [invoice_total_sum] => 9.993280
+        )
+
+)
+
+[2024-07-28 16:20:12] [From Initializepayment invoice data] Array
+(
+    [txn_id] => 66a661ac8d072641880a8db4
+    [invoice_url] => https://plisio.net/invoice/66a661ac8d072641880a8db4
+    [invoice_total_sum] => 9.993280
+)
+
+[2024-07-28 16:20:12] [From callback] Array
+(
+    [amount] => 0.000000
+    [comment] => Invoice details: https://plisio.net/account/transactions/66a661ac8d072641880a8db4
+    [currency] => USDT
+    [ipn_type] => invoice
+    [merchant] => Chime trading
+    [merchant_id] => 66a13281e3ff8821880b28de
+    [order_name] => makemoniy198@gmail.com
+    [order_number] => 66a661a70434e
+    [psys_cid] => USDT
+    [source_amount] => 10.00
+    [source_currency] => USD
+    [source_rate] => 0.999328
+    [status] => new
+    [txn_id] => 66a661ac8d072641880a8db4
+    [verify_hash] => ac01616d2636e971d3ac7d49384f113426f796b0
+)
+
+[2024-07-28 16:23:02] [From callback] Array
+(
+    [amount] => 0.000000
+    [comment] => Invoice details: https://plisio.net/account/transactions/66a661ac8d072641880a8db4
+    [currency] => USDT
+    [ipn_type] => invoice
+    [merchant] => Chime trading
+    [merchant_id] => 66a13281e3ff8821880b28de
+    [order_name] => makemoniy198@gmail.com
+    [order_number] => 66a661a70434e
+    [psys_cid] => USDT
+    [source_amount] => 10.00
+    [source_currency] => USD
+    [source_rate] => 0.999328
+    [status] => pending
+    [txn_id] => 66a661ac8d072641880a8db4
+    [verify_hash] => 865688d2fc68eb4779c638860219682811190238
+)
+
+[2024-07-28 16:25:02] [From callback] Array
+(
+    [amount] => 9.993280
+    [comment] => Invoice details: https://plisio.net/account/transactions/66a661ac8d072641880a8db4
+    [confirmations] => 4
+    [currency] => USDT
+    [ipn_type] => invoice
+    [merchant] => Chime trading
+    [merchant_id] => 66a13281e3ff8821880b28de
+    [order_name] => makemoniy198@gmail.com
+    [order_number] => 66a661a70434e
+    [psys_cid] => USDT
+    [source_amount] => 10.00
+    [source_currency] => USD
+    [source_rate] => 0.999328
+    [status] => completed
+    [txn_id] => 66a661ac8d072641880a8db4
+    [verify_hash] => 9c62e4fdbe13e9e198bf8210bc1172d7b9bc515d
+)
+

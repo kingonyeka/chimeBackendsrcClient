@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: rgb(27, 30, 61);
+            color: #ffffff;
+            padding: 10px 0;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+        .logo {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+            padding: 20px 0;
+            border-radius: 25%;
+        }
+        .content {
+            text-align: left;
+            padding: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #ffffff !important;
+            background-color: rgb(74, 184, 111);
+            text-decoration: none !important;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: rgb(58, 147, 89);
+        }
+        .link {
+            color: rgb(238, 92, 93);
+            text-decoration: none !important;
+            word-break: break-all;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888888;
+            text-align: center;
+        }
+        .readonly-link {
+            color: #555555;
+            font-size: 14px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="https://www.chimetrading.com/static/media/chimeLogo.baa99be4f50ea93f9ff9.jpeg" alt="Chime Forex Trading Logo" class="logo">
+            <h1>Welcome to Chime Trading Academy!</h1>
+        </div>
+        <div class="content">
+            <p>Dear User,</p>
+            <p>Welcome to the mastery class of forex trading with Chime Trading Academy. We're thrilled to have you onboard!</p>
+            <p>To complete your registration and start your journey to trading success, please click the button below:</p>
+            <a href="{{url}}" class="button">Confirm Registration</a>
+            <p>If the button above does not work, please copy and paste the following link into your web browser:</p>
+            <p class="readonly-link">{{url}}</p>
+            <p>We look forward to seeing you excel with us.</p>
+            <p>Best regards,<br>The Chime Forex Trading Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; <span id="current-year"></span> Chime Trading Academy. All rights reserved.</p>
+            <p>If you have any questions, feel free to contact our support team.</p>
+        </div>
+    </div>
+
+    <script>
+        // Set the current year dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

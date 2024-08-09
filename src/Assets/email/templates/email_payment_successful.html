@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgb(74, 184, 111); /* Green header background */
+            color: #ffffff;
+            border-radius: 10px 10px 0 0;
+        }
+        .logo {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+            padding: 20px 0;
+            border-radius: 25%;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .details {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .details p {
+            margin: 5px 0;
+        }
+        .courses-table, .robots-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .courses-table th, .courses-table td, .robots-table th, .robots-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .courses-table th, .robots-table th {
+            background-color: #f2f2f2;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: rgb(74, 184, 111);
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: rgb(58, 147, 89);
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.chimetrading.com/static/media/chimeLogo.baa99be4f50ea93f9ff9.jpeg" alt="Chime Forex Trading Logo" class="logo">
+            <h1>Payment Successful</h1>
+        </div>
+        <div class="content">
+            <p>Dear {{first_name}},</p>
+            <p>We are pleased to inform you that your payment has been successfully processed. Thank you for your purchase!</p>
+            
+            <div class="details">
+                <h2>Payment Details</h2>
+                <p><strong>Vendor:</strong> {{vendor}}</p>
+                <p><strong>Card Last 4 Digits:</strong>**** **** {{card_last4}}</p>
+                <p><strong>Payment ID:</strong> {{payment_id}}</p>
+                <p><strong>Amount:</strong> {{amount}}</p>
+                <p><strong>Currency:</strong> {{currency}}</p>
+            </div>
+
+            <!-- Courses Section Placeholder -->
+            {{courses_section}}
+            
+            <!-- Robots Section Placeholder -->
+            {{robots_section}}
+            
+            <p>If you have any questions or need further assistance, please feel free to contact our support team.</p>
+            <p>Best regards,<br>The Chime Trading Academy Team</p>
+            <a href="{{url}}" class="button">Go to Dashboard</a>
+        </div>
+        <div class="footer">
+            &copy; <span id="current-year"></span> Chime Trading Academy. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        // Set the current year dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
